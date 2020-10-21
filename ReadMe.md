@@ -39,7 +39,12 @@ This is simple js application to show how to set webpack
         }
         }
         ```
-   
+   - Multiple Entry Points/Outputs
+     Add messages1.js and index1.js
+     index.js references  messages.js and messages1.js
+     index1.js refrecnces only messages1.js
+
+     
 
      
     

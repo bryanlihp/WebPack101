@@ -1,6 +1,5 @@
 // index.js
-var messages = require('./messages');
-var messages1 = require('./messages1');
+var messages = require('./messages1');
 
 function HelloComponent() {
     this.message = message;
@@ -12,6 +11,4 @@ function HelloComponent() {
     main.appendChild(p);
   }
   var component1 = new HelloComponent(messages.hello);
-  var component2 = new HelloComponent(messages1.hello);
   component1.appendMessage();
-  component2.appendMessage();
