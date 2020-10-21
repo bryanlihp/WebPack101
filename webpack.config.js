@@ -6,7 +6,7 @@ const path = require('path');
             index1: './src/index1.js'
         },
         output: {
-            path: path.resolve(__dirname,'stage'),
+            path: path.resolve(__dirname,'stage'), //__dirname is an environment variable that tells you the absolute path of the directory containing the currently file.
             filename: '[name]_bundle.js'
         }
     }         

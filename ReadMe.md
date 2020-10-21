@@ -43,7 +43,23 @@ This is simple js application to show how to set webpack
      Add messages1.js and index1.js
      index.js references  messages.js and messages1.js
      index1.js refrecnces only messages1.js
-
+     ```
+     {
+        const path = require('path');
+        {
+            module.exports = {
+                entry: {
+                    index: './src/index.js',
+                    index1: './src/index1.js'
+                },
+                output: {
+                    path: path.resolve(__dirname,'stage'),
+                    filename: '[name]_bundle.js'
+                }
+            }         
+        }
+     }
+    ```
      
 
      
