@@ -20,11 +20,13 @@ This is simple js application to show how to set webpack
    Git commands:
     git checkout -b branchname (git branck branchname, git switcgh -c branckname)
     git push --set-upstream origin branchname
-
    The default config file is "webpack.config.js", or you can use command line option --config to specify one:
         npm webpack --config ./sample.js
    module.export defines the entry point and output
+   - Single entry/output  
         ```
+        {
+
         const path = require('path');
         {
             module.exports = {
@@ -35,7 +37,10 @@ This is simple js application to show how to set webpack
                 }
             }         
         }
+        }
         ```
+   
+
      
     
 
