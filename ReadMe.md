@@ -60,7 +60,20 @@ This is simple js application to show how to set webpack
         }
      }
     ```
-     
+3. Loaders
+   Webpack only supports Javascript and JSON file out of the box. Loaders enable webpack to process other types of files and convert them into modules that can be consumed by application.
+   Two properties in config:
+      - test - to filter files should be transformed.
+      - use  - the loader to be used
+    ```
+    {
+        module: {
+            rules: [
+                {test:/\.txt$/, use: 'raw-loader'}  // all txt files use raw-loader
+            ]
+        }
+    }
+    ```
 
      
     
