@@ -1,4 +1,5 @@
 // index.js
+import './styles/style.css';
 var messages = require('./messages');
 
 function HelloComponent(message) {
