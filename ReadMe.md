@@ -75,6 +75,46 @@ This is simple js application to show how to set webpack
     }
     ```
 
+    babel and style loaders:
+    - install:
+        npm install -D babel-loader style-loader, css-loader
+    - use:
+        ```
+        {
+        module: {
+        rules:[
+            {
+                test:/\.js$/,
+                exclude:/(node_modules|tmp)/,
+                use: {
+                   loader: 'babel-loader',
+                   options: {
+                       presets: ['@babel/preset-env']
+                   }
+                }
+            },
+            {
+                test:/\.css$/,
+                use: ['style-loader','css-loader']
+            }
+        ]
+        }
+        ```
+4. Plugins
+- Html plugin 
+  npm install -D html-webpack-plugin
+    ```
+    {
+        plugins : [
+            new HtmlWebpackPlugin({
+                filename: './test.html',
+                template: path.resolve('test.html'),
+                inject: 'body'
+            })
+        ]        
+    }
+    ```
+
      
     
 
